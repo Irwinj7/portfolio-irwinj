@@ -88,6 +88,17 @@ nav ul li a{
     width: 500px;
     margin-bottom: -220px;
 }
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 /*media query*/
 @media screen and (max-width: 1054px){
     .user-box img{
