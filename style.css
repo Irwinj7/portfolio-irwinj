@@ -8,17 +8,17 @@
 .header {
     width: 100%;
     height: 100vh;
-    padding: 0 10%;
+    padding: 0;
     background-color: rgb(241, 241, 238);
 }
 /* Navigation bar section*/
 nav{
     width: 100%;
-    display: grid;
-    grid-template-columns: row;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
+    background-color: gray;
 }
 .name{
     font-size: 30px;
@@ -32,7 +32,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: rgb(103, 103, 139);
+    color: white;
 }
 /*Mid section*/
 .text-box{
@@ -53,10 +53,28 @@ nav ul li a{
 .text-box a{
     display: inline-block;
     text-decoration: none;
+    color: white;
+    background: gray;
+    padding: 10px 30px;
     color: rgb(103, 103, 139);
+    margin-top: 50px;
+    border-radius: 6px;
+
+}
+.text-box a span{
+    color: white;
 }
 .text-box p{
     font-size: large;
     color: gray;
-
 }
+
+/* colors used{
+    background-color: rgb(241, 241, 238);
+    nav background-color: gray;
+    nav ul li color: white;
+    text box h3 color: rgb(103, 103, 139)
+    text box a color: rgb(103, 103, 139)
+    text box p color: gray;
+
+} */
