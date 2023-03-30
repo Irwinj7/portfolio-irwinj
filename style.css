@@ -19,6 +19,8 @@ nav{
     justify-content: space-between;
     padding: 20px 0;
     background-color: gray;
+    position: relative;
+    z-index: 100;
 }
 .name{
     font-size: 30px;
@@ -68,6 +70,39 @@ nav ul li a{
     font-size: large;
     color: gray;
 }
+/* img is here*/
+.user-box{
+    /* background-color: rgb(103, 103, 139); */
+    border-radius: 180px;
+    position: absolute;
+    top: 50px;
+    right: 12%;
+    z-index: 1px;
+}
+.user-box img{
+    display: block;
+    padding-top: 100px;
+    width: 500px;
+    margin-bottom: -220px;
+}
+/*media query*/
+@media screen and (max-width: 100px){
+    .user-box {
+        display: none;
+    }
+    img{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 /* colors used{
     background-color: rgb(241, 241, 238);
