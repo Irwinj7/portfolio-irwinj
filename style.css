@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Rectangle 1 */
+.header {
+    width: 100%;
+    height: 100vh;
+    padding: 0 10%;
+    background-color: rgb(241, 241, 238);
+}
+
+nav{
+    width: 100%;
+    grid: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(103, 103, 139);
+}
+
+.text-box{
+    margin-top: 130px;
+    max-width: 600px;
+}
+
+.text-box h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: rgb(103, 103, 139);;
+}
