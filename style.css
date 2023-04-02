@@ -231,7 +231,7 @@ form{
     flex-direction: column;
     border: white;
     border-radius: 30px;
-    width: 470px;
+    width: 600px;
     /* max-width: 700px; */
     padding: 2vw 4vw;
 }
@@ -317,6 +317,7 @@ form button{
 }
 .weather-app h1{
     font-size: 55px;
+    margin-top: 20px;
     margin-bottom: 40px;
     color: #EDFF00;
 }
@@ -333,26 +334,19 @@ form button{
     background: white;
     padding: 10px 30px;
     color: rgb(103, 103, 139);
-    margin-top: 50px;
+    margin-top: 20px;
     border-radius: 6px;
 }
 .weather-app a span{
     color: black;
-} */
-
-
-
-
-
-
-
-
-
-
-
+}
+.weather-app img{
+    max-width: 350px;
+    margin-bottom: 0px;
+}
 
 /*media query*/
-@media screen and (max-width: 1054px){
+@media screen and (max-width: 1300px){
     .user-box img{
         display: none;
     }
@@ -360,12 +354,31 @@ form button{
         display: none;
     }
 }
-@keyframes moveup{
+@media screen and (max-width: 1360px){
+    form{
+        transform: translateY(+330px);
+    }
+}
+@media screen and (max-width: 751px){
+    form{
+        transform: translateY(+400px);
+        transform: scale(.7) translate(+50%, +100%)
+        /* transform: translate(); */
+    }
+}
+@media screen and (max-width: 375px){
+    form{
+        display: none;
+    }
+}
+
+@keyframes moveup {
     100%{
         opacity: 1;
         transform: translateY(0px);
     }
 }
+
 
 
 /* colors used{
