@@ -266,6 +266,19 @@ form button{
     font-weight: 800px;
     margin-bottom: 20px;
 }
+.error-mess{
+    font-size: 55px;
+    color: white;
+    background-color: red;
+    position: absolute;
+    border-radius: 20px;
+    top: 600px;
+    right: 17%;
+    z-index: 1px;
+    font-weight: 800px;
+    margin-bottom: 20px;
+}
+
 /* <------------ PROJECTS PAGE ----------------> */
 .projects{
     padding-left: 100px;
