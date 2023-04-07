@@ -1,7 +1,7 @@
 let goButton = document.getElementById(`go-button`)
 let todaysResultsDiv = document.getElementsByClassName(`results-div`)
 const baseUrl = "https://tradestie.com/api/v1/apps/reddit"
-let firstResults = document.getElementById(`1results`)
+let firstResults = document.getElementById(`h1-1results`)
 
 goButton.addEventListener("click", (event) => {
     event.preventDefault();
@@ -16,8 +16,8 @@ function displayCard(json){
     for (let i = 0; i < json.length; i++) {
         firstResults.toggleAttribute('hidden')
         let newP = document.createElement('p')
+        newP.textContent = json[i].no_of_comments
         firstResults.append(newP)
-        
     }
    
     // let stocks = json
